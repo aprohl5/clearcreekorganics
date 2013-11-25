@@ -19,6 +19,10 @@ regions[sidebar_second] = Sidebar Second
 
 ; CORE REGIONS - DISABLED
 
+; CUSTOM REGIONS
+
+regions[navigation] = Navigation
+
 stylesheets[screen][] = css/styles.css
 
 scripts[] = js/scripts.js

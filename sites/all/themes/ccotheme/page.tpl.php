@@ -107,16 +107,9 @@
 
     </div></div> <!-- /.section, /#header -->
 
-    <?php if ($main_menu || $secondary_menu): ?>
-      <div id="navigation"><div class="section">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-      </div></div> <!-- /.section, /#navigation -->
-    <?php endif; ?>
+    <?php print render($page['navigation']); ?>
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
+  
 
     <?php print $messages; ?>
 
@@ -125,7 +118,7 @@
       <div id="content" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
-        <?php print render($title_prefix); ?>
+        <!-- <?php print render($title_prefix); ?> -->
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
@@ -149,8 +142,10 @@
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
-    <div id="footer"><div class="section">
+    <footer>
+    	<div class="section">
       <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer -->
+    	</div> <!-- /.section -->
+    </footer> 
 
   </div></div> <!-- /#page, /#page-wrapper -->
