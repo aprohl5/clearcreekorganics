@@ -1,0 +1,24 @@
+core 		= 7.x
+name 		= Clear Creek Organics Theme
+description = The Clear Creek Organics theme has been developed specifically to support Clear Creek Organics, an Organic Family farm based in Denver, CO.
+
+; CORE REGIONS - REQIUIRED
+
+regions[page_top] = Page Top
+regions[content] = Content
+regions[page_bottom] = Page Bottom
+
+; CORE REGIONS
+
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[header] = Header
+regions[footer] = Footer
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+
+; CORE REGIONS - DISABLED
+
+stylesheets[screen][] = css/styles.css
+
+scripts[] = js/scripts.js
