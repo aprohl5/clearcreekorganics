@@ -83,7 +83,7 @@
         </a>
       <?php endif; ?>
 
-      <?php if ($site_name || $site_slogan): ?>
+     <!-- <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
@@ -95,20 +95,22 @@
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </h1>
             <?php endif; ?>
-          <?php endif; ?>
+          <?php endif; ?> -->
 
-          <?php if ($site_slogan): ?>
+      <!--    <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
-        </div> <!-- /#name-and-slogan -->
+        </div>   -->
       <?php endif; ?>
 
       <?php print render($page['header']); ?>
 
     </div></div> <!-- /.section, /#header -->
+<div id="headerRight">
 
     <?php print render($page['navigation']); ?>
 
+</div>
   
 
     <?php print $messages; ?>
@@ -131,7 +133,6 @@
         
         -->
         <?php print render($page['content']); ?>
-        
         
       <!--
         <?php print $feed_icons; ?>
