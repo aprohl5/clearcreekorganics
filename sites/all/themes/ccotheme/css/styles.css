@@ -96,7 +96,9 @@ purple - #4C1B4A;
 
 */
 
-
+#page-wrapper {
+padding:50px;
+}
 
 body {
 background: url("../images/background.png");
