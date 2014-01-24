@@ -22,6 +22,11 @@ regions[sidebar_second] = Sidebar Second
 ; CUSTOM REGIONS
 
 regions[navigation] = Navigation
+regions[extended_tagline] = Extended Tagline
+regions[content_home] = Homepage Content
+
+
+
 
 stylesheets[screen][] = css/styles.css
 

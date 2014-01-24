@@ -86,8 +86,9 @@
       
 
     
-<div id="headerRight">
+<div id="headerRight" class="clearfix">
 	<?php print render($page['header']); ?>
+	
     <?php print render($page['navigation']); ?>
 
 </div>
@@ -113,7 +114,14 @@
        
         
         -->
-        <?php print render($page['content']); ?>
+        
+        <!--<?php print render($page['content']); ?>-->
+        
+        <?php if (!drupal_is_front_page()) { ?>
+<?php print render($page['content']); ?>
+<?php } ?>
+
+		<?php print render($page['content_home']); ?>
         
       <!--
         <?php print $feed_icons; ?>

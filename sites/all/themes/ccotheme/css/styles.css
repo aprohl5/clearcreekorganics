@@ -97,28 +97,63 @@ purple - #4C1B4A;
 */
 
 #page-wrapper {
-padding:50px;
-}
+margin:50px auto;
+} 
 
 body {
 background: url("../images/background.png");
 font-family: georgia;
-
+width:945px;
+padding:50px;
 }
 
 a {
 text-decoration:none;
 }
 
+/* HEADER */
+
+header {
+height:222px;
+overflow:hidden;
+width:945px;
+position:relative;
+z-index:9;
+}
+
 #logo {
 float:left;
+width:214px;
+margin-right:43px;
+}
+
+/* EXTENDED TAGLINE */
+
+#headerRight {
+float:left;
+width:688px;
+}
+
+.region-header {
+display:inline-block;
+float:right;
+position:relative;
+top:115px;
+left:-10px;
+}
+
+header h6 {
+display:inline;
+font-family:kingthings;
+color: #A53823;
+padding-right:18px;
 }
 
 /* Main Nav */
 
-#headerRight {
-float:left;
-width:800px;
+
+.region-navigation {
+float:right;
 }
 
 .region-navigation  ul {
@@ -127,9 +162,11 @@ margin:0px;
 padding:0px;
 font-family:bebasNeue;
 font-size:18px;
-border-top: 2px solid black;
-border-bottom: 2px solid black;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
 height:26px;
+position:relative;
+top:125px;
 }
 
 
@@ -155,7 +192,63 @@ color: #a53823;
 color: #756c6a;
 }
 
+/* CONTENT AREA */
+
+#content {
+
+}
+
+
+/* HOME WELCOME */
+
+#content #block-block-2 {
+background-color:#4C1B4A;
+width:216px;
+height:305px;
+float:left;
+color:#E3D7B4;
+font-family:kingthings;
+font-size:24px;
+padding:104px 42px;
+text-align:center;
+}
+
+#content #block-block-2 h1 {
+line-height:1.4em;
+}
+
+.welcomeLarge {
+font-size:36px;
+color:white;
+padding:30px 0px;
+display:inline-block;
+}
+
+/* IMAGE SLIDER */
+
+#block-nivo-slider-nivo-slider {
+width:645px;
+height:513px;
+float:left;
+}
+
+/* FOOTER */
+
 footer {
 height:100px;
 background-color:#756C6A;
+margin-top:20px;
 }
+
+/* CLEARFIX */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
