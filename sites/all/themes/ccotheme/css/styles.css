@@ -96,15 +96,29 @@ purple - #4C1B4A;
 
 */
 
+.region-page-top:after {
+
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html .region-page-top             { zoom: 1; } /* IE6 */
+*:first-child+html .region-page-top { zoom: 1; } /* IE7 */
+
+
 #page-wrapper {
-margin:50px auto;
+margin:50px 0px;
 } 
 
 body {
 background: url("../images/background.png");
 font-family: georgia;
 width:945px;
-padding:50px;
+margin:0 auto;
 }
 
 a {
@@ -195,9 +209,15 @@ color: #756c6a;
 /* CONTENT AREA */
 
 #content {
-
+position:relative;
 }
 
+#block-block-4 {
+position:absolute;
+z-index:0;
+left:-250px;
+top:20px;
+}
 
 /* HOME WELCOME */
 
@@ -211,6 +231,8 @@ font-family:kingthings;
 font-size:24px;
 padding:104px 42px;
 text-align:center;
+position:relative;
+z-index:1;
 }
 
 #content #block-block-2 h1 {
@@ -234,11 +256,49 @@ float:left;
 
 /* FOOTER */
 
-footer {
-height:100px;
+.region-footer {
+height:107px;
 background-color:#756C6A;
-margin-top:20px;
+margin-top:23px;
+padding:0px 40px 0px 34px;
+color:#fff;
 }
+
+.region-footer a {
+color:#fff;
+}
+
+
+.region-footer .float {
+float:left;
+height:85px;
+margin:11px 0px;
+}
+
+#mailPhone1 {
+border-right:1px solid white;
+width:20px;
+padding-right:6px;
+}
+
+#mailPhone1 img:first-child, #twitter1 img:first-child  {
+padding-bottom:17px;
+padding-top:10px;
+}
+
+#mailPhone2 {
+font-style:italic;
+font-size:11px;
+padding-left:8px;
+width:163px;
+padding-right:45px;
+}
+
+#mailPhone2 p:first-child {
+padding-bottom:17px;
+padding-top:10px;
+}
+
 
 /* CLEARFIX */
 
