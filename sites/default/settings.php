@@ -336,7 +336,7 @@ ini_set('session.cookie_lifetime', 2000000);
  * with a leading dot, as per RFC 2109.
  */
 # $cookie_domain = '.example.com';
-
+ini_set('memory_limit', '64M');
 /**
  * Variable overrides:
  *
