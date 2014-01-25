@@ -217,6 +217,9 @@ position:absolute;
 z-index:0;
 left:-250px;
 top:20px;
+transform:rotate(17deg);
+-ms-transform:rotate(17deg); /* IE 9 */
+-webkit-transform:rotate(17deg); /* Safari and Chrome */
 }
 
 /* HOME WELCOME */
@@ -254,6 +257,10 @@ height:513px;
 float:left;
 }
 
+.slider-wrapper {
+height:513px;
+}
+
 /* FOOTER */
 
 .region-footer {
@@ -262,12 +269,25 @@ background-color:#756C6A;
 margin-top:23px;
 padding:0px 40px 0px 34px;
 color:#fff;
+position:relative;
 }
 
 .region-footer a {
 color:#fff;
 }
 
+#block-block-3 {
+float:left;
+}
+
+#block-block-3:after {
+visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
 
 .region-footer .float {
 float:left;
@@ -305,6 +325,39 @@ width:20px;
 padding-right:13px;
 }
 
+#block-views-footer-tweets-block {
+float:left;
+padding:10px 40px 0px 17px;
+width:240px;
+height:97px;
+font-family:"Georgia";
+font-size:12px;
+line-height:1.3em;
+overflow:hidden;
+}
+
+#block-views-footer-tweets-block li {
+margin:0;
+}
+
+#block-views-footer-tweets-block::before {
+content:url(../images/upperTweetQuote.png);
+
+}
+
+#block-views-footer-tweets-block::after {
+content:url(../images/lowerTweetQuote.png);
+position:relative;
+left:215px;
+top:-25px;
+}
+
+#block-block-5 {
+position:absolute;
+width:320px;
+left:615px;
+top:17px;
+}
 
 /* CLEARFIX */
 
