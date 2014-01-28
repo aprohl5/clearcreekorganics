@@ -97,42 +97,33 @@
 
     <?php print $messages; ?>
 
-    <div id="main-wrapper"><div id="main" class="clearfix">
+    <div id="main" class="clearfix">
 
       <div id="content" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
-        <!-- <?php print render($title_prefix); ?> -->
-        <!--<?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-        <?php print render($title_suffix); ?>-->
-       
-       <!-- <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-      -->
-     <!--   <?php print render($page['help']); ?>
-      
-        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-       
+    
         
-        -->
-        
-        <!--<?php print render($page['content']); ?>-->
+         
+         <div id="sidebar-first" class="column sidebar"><div class="section">
+          <?php print render($page['sidebar_first']); ?>
+        </div></div> <!-- /.section, /#sidebar-first -->
+     
         
         <?php if (!drupal_is_front_page()) { ?>
 <?php print render($page['content']); ?>
 <?php } ?>
 
+		 <?php if (drupal_is_front_page()) { ?>
 		<?php print render($page['content_home']); ?>
+		<?php } ?>
         
       <!--
         <?php print $feed_icons; ?>
         -->
       </div></div> <!-- /.section, /#content -->
 
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first -->
-      <?php endif; ?>
+      <!-- Sidebar first was here -->
 
       <?php if ($page['sidebar_second']): ?>
         <div id="sidebar-second" class="column sidebar"><div class="section">
@@ -140,7 +131,7 @@
         </div></div> <!-- /.section, /#sidebar-second -->
       <?php endif; ?>
 
-    </div></div> <!-- /#main, /#main-wrapper -->
+    </div> <!-- /#main -->
 
     <footer>
     	<div class="section">

@@ -13,7 +13,19 @@
  Global CSS for ALL menu types
 ******************************/
 
-ul.nice-menu {
+ul.nice-menu > li:hover > a, ul.nice-menu > li > ul > li:hover > a {
+color: #a53823;
+}
+
+ul.nice-menu a {
+color: #756c6a ;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
 list-style-type:none;
 margin:0px;
 padding:0px;
@@ -26,21 +38,17 @@ height:26px;
 z-index:1000;
 }
 
-ul.nice-menu a {
+ul.nice-menu-down a {
 display:inline;
-color: #756c6a ;
+
 }
 
-ul.nice-menu > li:hover > a, ul.nice-menu > li > ul > li:hover > a {
-color: #a53823;
-}
-
-ul.nice-menu li {
+ul.nice-menu-down li {
 letter-spacing: .176em;
 display:inline;
 }
 
-ul.nice-menu ul {
+ul.nice-menu-down ul {
 margin:6px 0px 19px 16px;
 padding:9px;
 background:rgba(255,255,255,1);
@@ -54,7 +62,7 @@ z-index:120;
 }
 
 
-ul.nice-menu ul li {
+ul.nice-menu-down ul li {
 padding:3px 0px 3px 0px;
 font-family:Kingthings;
 font-size:16px;
@@ -62,62 +70,27 @@ white-space:nowrap;
 letter-spacing:0;
 }
 
-ul.nice-menu ul li a {
+ul.nice-menu-down ul li a {
 padding:0px;
 border:none;
 }
 
-ul.nice-menu li a {    /*   .leaf a */
+ul.nice-menu-down li a {    /*   .leaf a */
 padding: 0px 25px;
 border-right: 2px solid #756c6a;
 position:relative;
 top:20%;
 }
 
-
-
-/*
-ul.nice-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}*/
-
 /******************************
- HORIZONTAL (down) menus
+ VERTICAL (right) menus
 ******************************/
-/*
-ul.nice-menu-down {
-  float: left; 
-  border: 0;
-}*/
-
-/*ul.nice-menu-down li {
-  border-top: 1px solid #ccc;
-}*/
 
 
-/*
-ul.nice-menu-down li li {
-  border-top: 0;
+ul.nice-menu-right li {
+padding: 8px 21px;
 }
 
-ul.nice-menu-down ul {
-  left: 0; 
+ul.nice-menu-right li:first-child {
+padding: 42px 21px 8px 21px;
 }
-*/
-/*ul.nice-menu-down ul li {
-  clear: both;
-}*/
-/*
-ul.nice-menu-down li ul li ul {
-  left: 12.5em; 
-  top: -1px;
-}
-*/
-/*
-ul.nice-menu-down .menuparent a {
-  padding-right: 15px; 
-}*/
-
-

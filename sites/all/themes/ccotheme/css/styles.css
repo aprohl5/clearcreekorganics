@@ -248,6 +248,47 @@ z-index:11;
 height:513px;
 }
 
+
+/* SIDE MENU */
+
+.region-sidebar-first {
+width:226px;
+height:537px;
+background-color:rgba(227,215,179,.5);
+float:left;
+color:#756C6A;
+text-align:right;
+font-family:kingthings;
+position:relative;
+z-index:8;
+}
+
+/* BASIC PAGE */
+
+.node-page {
+	width:685px;
+	min-height:513px;
+	float:left;
+	overflow:hidden;
+	margin-left:34px;
+}
+
+.field-name-field-title {
+font-family:bebasNeue;
+font-size:18px;
+color:#a53823;
+letter-spacing:3px;
+padding:18px 0px 5px 0px;
+}
+
+.field-name-body {
+font-style:italic;
+font-size:13.5px;
+line-height:1.4em;
+}
+
+
+
 /* FOOTER */
 
 .region-footer {
