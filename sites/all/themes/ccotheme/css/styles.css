@@ -129,10 +129,10 @@ text-decoration:none;
 
 header {
 height:222px;
-overflow:hidden;
+/*overflow:hidden;*/
 width:945px;
 position:relative;
-z-index:9;
+z-index:17;
 }
 
 #logo {
@@ -146,6 +146,7 @@ margin-right:43px;
 #headerRight {
 float:left;
 width:688px;
+z-index:16;
 }
 
 .region-header {
@@ -170,43 +171,26 @@ padding-right:18px;
 float:right;
 position:relative;
 top:125px;
+z-index:15;
 }
 
 .region-navigation  ul {
-/*list-style-type:none;
-margin:0px;
-padding:0px;
-font-family:bebasNeue;
-font-size:18px;
-height:26px;*/
+
 border-top: 1px solid black;
 border-bottom: 1px solid black;
 }
 
-
-.region-navigation ul li {
-/*display:inline;*/
-
-}
-
-.leaf a {
-
-/*padding: 0px 25px;
-border-right: 2px solid #756c6a;
+.region-content-home {
 position:relative;
-top:20%;*/
-}
-
-.leaf:hover a {
-color: #a53823;
-
-}
-
-.menu a {
-color: #756c6a;
+z-index:11;
 }
 
 /* CONTENT AREA */
+
+#main-content {
+position:relative;
+z-index:11;
+}
 
 #content {
 position:relative;
@@ -256,6 +240,8 @@ display:inline-block;
 width:645px;
 height:513px;
 float:left;
+position:relative;
+z-index:11;
 }
 
 .slider-wrapper {
@@ -362,7 +348,7 @@ top:17px;
 
 /* CLEARFIX */
 
-.clearfix:after {
+.clearfix:after, .region-content-home:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;

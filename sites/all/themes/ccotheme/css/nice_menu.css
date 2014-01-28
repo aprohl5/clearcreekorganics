@@ -23,6 +23,7 @@ border-top: 1px solid black;
 border-bottom: 1px solid black;
 padding:7px 0px 0px 0px;
 height:26px;
+z-index:1000;
 }
 
 ul.nice-menu a {
@@ -49,12 +50,16 @@ border-right:1px solid black;
 border-left:1px solid black;
 border-bottom:1px solid black;
 float:none;
+z-index:120;
 }
+
 
 ul.nice-menu ul li {
 padding:3px 0px 3px 0px;
-font-family:Georgia;
-white-space:nowrap
+font-family:Kingthings;
+font-size:16px;
+white-space:nowrap;
+letter-spacing:0;
 }
 
 ul.nice-menu ul li a {
