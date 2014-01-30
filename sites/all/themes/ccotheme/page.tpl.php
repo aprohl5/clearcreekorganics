@@ -114,9 +114,9 @@
 <?php print render($page['content']); ?>
 <?php } ?>
 
-		 <?php if (drupal_is_front_page()) { ?>
+		
 		<?php print render($page['content_home']); ?>
-		<?php } ?>
+		
         
       <!--
         <?php print $feed_icons; ?>

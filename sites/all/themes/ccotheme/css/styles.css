@@ -260,7 +260,7 @@ color:#756C6A;
 text-align:right;
 font-family:kingthings;
 position:relative;
-z-index:8;
+z-index:12;
 }
 
 /* BASIC PAGE */
@@ -271,6 +271,8 @@ z-index:8;
 	float:left;
 	overflow:hidden;
 	margin-left:34px;
+	position:relative;
+	z-index:12;
 }
 
 .field-name-field-title {
@@ -287,7 +289,25 @@ font-size:13.5px;
 line-height:1.4em;
 }
 
+.node-pull-out {
+font-family:kingthings;
+font-size:14px;
+background-color:rgba(227,215,179,.5);
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+margin: 40px 0px 0px 0px;
+padding:8px;
+letter-spacing:3px;
+line-height:1.3em;
+}
 
+
+
+.field-name-field-pullout-headline {
+text-transform:uppercase;
+display:block;
+padding: 0px 0px 8px 0px;
+}
 
 /* FOOTER */
 
@@ -380,11 +400,45 @@ left:215px;
 top:-25px;
 }
 
-#block-block-5 {
-position:absolute;
-width:320px;
-left:615px;
+.block-simplenews {
+float:left;
+width:290px;
+font-family:"BebasNeue";
+position:relative;
 top:17px;
+}
+
+.block-simplenews p {
+font-size:15px;
+letter-spacing:.3em;
+}
+
+.block-simplenews input {
+float:left;
+padding:0;
+border:0;
+background:rgba(255,255,255,.5);
+height:22px;
+}
+
+.block-simplenews .form-item-mail {
+float:left;
+margin:0;
+}
+
+.block-simplenews .form-item-mail label {
+display:none;
+}
+
+.block-simplenews #edit-mail {
+
+}
+
+.block-simplenews #edit-submit {
+font-family:"BebasNeue";
+font-size:15px;
+letter-spacing:.2em;
+padding:0 5px;
 }
 
 /* CLEARFIX */

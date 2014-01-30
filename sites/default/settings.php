@@ -278,7 +278,7 @@ $drupal_hash_salt = '08bTaP8MaeZ0FeLaQDBMTMbc_nWrZjK5S3T1SYTUzh4';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-# $base_url = 'http://www.example.com';  // NO trailing slash!
+ $base_url = 'http://localhost';  // NO trailing slash!
 
 /**
  * PHP settings:
@@ -565,3 +565,4 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
