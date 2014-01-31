@@ -289,7 +289,8 @@ font-size:13.5px;
 line-height:1.4em;
 }
 
-.node-pull-out {
+
+.group-pullout {
 font-family:kingthings;
 font-size:14px;
 background-color:rgba(227,215,179,.5);
