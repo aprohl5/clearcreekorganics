@@ -197,10 +197,13 @@ position:relative;
 z-index:10;
 }
 
+
+/* BACKGROUND BEET/CARROT IMAGE */
+
 #block-block-4 {
 position:absolute;
 z-index:0;
-left:-250px;
+left:-300px;
 top:20px;
 transform:rotate(17deg);
 -ms-transform:rotate(17deg); /* IE 9 */
@@ -319,6 +322,7 @@ margin-top:23px;
 padding:0px 40px 0px 34px;
 color:#fff;
 position:relative;
+z-index:13;
 }
 
 .region-footer a {
