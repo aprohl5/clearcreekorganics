@@ -313,6 +313,65 @@ display:block;
 padding: 0px 0px 8px 0px;
 }
 
+/* Event Listings */
+
+.view-event-listing {
+float: left;
+position: relative;
+z-index: 12;
+font-family:kingthings;
+font-size:14px;
+}
+
+.view-event-listing .views-row {
+background-color:rgba(227,215,179,.7);
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+margin: 20px 0px 0px 0px;
+padding:12px 15px 8px 15px;
+letter-spacing:3px;
+line-height:1.3em;
+}
+
+.views-field-field-event-image {
+float:left;
+padding:0px 15px 0px 0px;
+}
+
+.view-event-listing .views-field-title {
+padding-bottom:5px;
+font-family:bebasNeue;
+font-size:18px;
+color:#a53823;
+letter-spacing:3px;
+}
+
+.views-field-field-event-description {
+padding: 8px 0px 0px 0px;
+font-family:"Georgia";
+font-style:italic;
+}
+
+.view-event-listing .views-field-view-node {
+display:inline-block;
+position:relative;
+left:40%;
+}
+
+/* BLOG */
+
+.view-blog, view-blog-listing, .node-article {
+float:left;
+width:685px;
+min-height:513px;
+	overflow:hidden;
+	margin-left:34px;
+	position:relative;
+	z-index:12;
+}
+
+
+
 /* FOOTER */
 
 .region-footer {
@@ -384,6 +443,7 @@ padding:10px 40px 0px 17px;
 width:240px;
 height:97px;
 font-family:"Georgia";
+font-style:italic;
 font-size:12px;
 line-height:1.3em;
 overflow:hidden;
@@ -448,7 +508,7 @@ padding:0 5px;
 
 /* CLEARFIX */
 
-.clearfix:after, .region-content-home:after {
+.clearfix:after, .region-content-home:after, .views-row:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;

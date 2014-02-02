@@ -49,9 +49,9 @@ display:inline;
 }
 
 ul.nice-menu-down ul {
-margin:6px 0px 19px 16px;
+margin:7px 0px 19px 16px;
 padding:9px;
-background:rgba(255,255,255,1);
+background:rgba(255,255,255,.9);
 background-image: url("../images/background.png");
 border-top:none;
 border-right:1px solid black;
