@@ -122,7 +122,12 @@ margin:0 auto;
 }
 
 a {
+color: #4C1B4A;
 text-decoration:none;
+}
+
+a:hover {
+color: #A53823;
 }
 
 /* HEADER */
@@ -344,7 +349,7 @@ content:"- ";
 
 /* Event Listings */
 
-.view-event-listing {
+.view-events {
 float: left;
 position: relative;
 z-index: 12;
@@ -352,7 +357,7 @@ font-family:kingthings;
 font-size:14px;
 }
 
-.view-event-listing .views-row {
+.view-events .views-row {
 background-color:rgba(227,215,179,.7);
 border-top: 1px solid black;
 border-bottom: 1px solid black;
@@ -367,7 +372,7 @@ float:left;
 padding:0px 15px 0px 0px;
 }
 
-.view-event-listing .views-field-title {
+.view-events .views-field-title {
 padding-bottom:5px;
 font-family:bebasNeue;
 font-size:18px;
@@ -375,7 +380,13 @@ color:#a53823;
 letter-spacing:3px;
 }
 
+.view-events p {
+font-family: "Georgia";
+}
 
+.views-field-view-node {
+padding-top:10px;
+}
 
 /* BLOG */
 
