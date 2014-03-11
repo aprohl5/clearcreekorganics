@@ -130,6 +130,10 @@ a:hover {
 color: #A53823;
 }
 
+em {
+font-style:normal;
+}
+
 /* HEADER */
 
 header {
@@ -261,7 +265,7 @@ height:513px;
 
 .region-sidebar-first {
 width:226px;
-height:537px;
+min-height:537px;
 background-color:rgba(227,215,179,.5);
 float:left;
 color:#756C6A;
@@ -273,7 +277,7 @@ z-index:12;
 
 /* BASIC PAGE */
 
-.node-page, .view-types-of-shares, .node-recipe {
+.node-page, .view-types-of-shares {
 	width:685px;
 	min-height:513px;
 	float:left;
@@ -347,6 +351,18 @@ content:"- ";
 	z-index:12;
 }
 
+/* Customers */
+
+.view-customers {
+	width:685px;
+	min-height:513px;
+	float:left;
+	overflow:hidden;
+	margin-left:34px;
+	position:relative;
+	z-index:12;
+}
+
 /* Event Listings */
 
 .view-events {
@@ -390,7 +406,7 @@ padding-top:10px;
 
 /* BLOG */
 
-.view-blog, .view-taxonomy-term {
+.view-blog, .view-taxonomy-term, .region-content .content > .node-recipe, .region-content .content > .node-article {
 float:left;
 width:685px;
 min-height:513px;
@@ -400,7 +416,69 @@ min-height:513px;
 	z-index:12;
 }
 
+.node-article p, .node-recipe p {
+padding: 10px 0px;
+}
 
+.view-blog .views-row-even, .view-taxonomy-term .views-row-even {
+background-color:rgba(76,27,33,.1);
+}
+
+.view-blog .views-row, .view-taxonomy-term .views-row {
+padding:0px 15px 15px;
+}
+
+.node-article .field-image {
+padding:15px 0px;
+}
+
+.node-article .field-tags {
+padding:0px 0px 15px 0px;
+}
+
+.node-article h4 {
+
+}
+
+.submitted {
+font-size:12px;
+}
+
+#sidebar-first #block-views-ingredients-block li a:link, #sidebar-first #block-views-ingredients-block li a:visited{
+color: #756c6a;
+}
+
+#sidebar-first #block-views-ingredients-block li a:hover {
+color: #A53823;
+}
+
+#sidebar-first #block-views-ingredients-block li.ingredients-menu-head {
+padding:8px 21px 8px 0px;
+}
+
+#sidebar-first #block-views-ingredients-block .content li {
+display:none;
+padding:8px 42px 8px 0px;
+}
+
+#sidebar-first #block-views-ingredients-block .content li:after {
+content:"-";
+padding:0px;
+margin:0px;
+}
+
+#sidebar-first #block-views-ingredients-block .content ul:before {
+content:"ingredients";
+padding: 8px 21px;
+}
+
+#sidebar-first #block-views-ingredients-block .content ul:hover li {
+display:block;
+}
+
+.item-list ul.pager {
+margin-top:15px;
+}
 
 /* FOOTER */
 

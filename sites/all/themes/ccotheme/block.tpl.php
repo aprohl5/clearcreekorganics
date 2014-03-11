@@ -44,8 +44,25 @@
  * @ingroup themeable
  */
 ?>
+
+
+
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
+<?php 
+/*
+if ($block_html_id == 'block-views-ingredients-block') {
+
+dpm($block_html_id); 
+
+ print render($title_prefix); 
+ if ($block->subject): 
+  echo "<ul><li class='ingredients-menu-head'";
+	print $title_attributes; echo ">"; print $block->subject; echo "</li></ul>";
+ endif;
+   print render($title_suffix); 
+}*/
+?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php print $content ?>

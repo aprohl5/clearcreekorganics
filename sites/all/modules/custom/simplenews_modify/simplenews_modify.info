@@ -1,0 +1,5 @@
+name = Simplenews - Modify
+description = Modifies Simplenews subscription block to use value instead of label
+core = 7.x
+package = mail
+dependencies[] = simplenews

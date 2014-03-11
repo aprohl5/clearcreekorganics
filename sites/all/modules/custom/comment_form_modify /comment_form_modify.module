@@ -1,0 +1,21 @@
+<?php
+
+/*function comment_form_modify_form_alter(&$form, &$form_state, $form_id) {
+
+	
+	if ($form_id == 'comment_node_article_form') {
+		dpm($form['comment_body']);
+		//$form['comment_body']['#value'] = 'email';
+	}
+
+
+
+}
+
+
+
+
+function comment_form_modify_filter_tips($tips, $long = FALSE, $extra = '') {
+  return '';
+}
+*/
