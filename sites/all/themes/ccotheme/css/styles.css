@@ -266,7 +266,7 @@ height:513px;
 .region-sidebar-first {
 width:226px;
 min-height:537px;
-background-color:rgba(227,215,179,.5);
+background-color:rgba(227,215,179,.7);
 float:left;
 color:#756C6A;
 text-align:right;
@@ -458,7 +458,7 @@ padding:8px 21px 8px 0px;
 
 #sidebar-first #block-views-ingredients-block .content li {
 display:none;
-padding:8px 42px 8px 0px;
+padding:4px 42px 4px 0px;
 }
 
 #sidebar-first #block-views-ingredients-block .content li:after {
@@ -467,17 +467,55 @@ padding:0px;
 margin:0px;
 }
 
-#sidebar-first #block-views-ingredients-block .content ul:before {
+/*#sidebar-first #block-views-ingredients-block .content ul:before {
 content:"ingredients";
 padding: 8px 21px;
-}
+}*/
 
 #sidebar-first #block-views-ingredients-block .content ul:hover li {
 display:block;
 }
 
+ul.field-ingredients {
+list-style-type:disc;
+padding-left:10px;
+}
+
+ul.field-ingredients li, ol.field-directions li {
+margin-left:18px;
+}
+
+ol.field-directions {
+list-style-type:decimal;
+padding-left:10px;
+}
+
+
 .item-list ul.pager {
 margin-top:15px;
+}
+
+.field-servings {
+padding:10px 0px;
+}
+
+#node_recipe_full_group_top_layer {
+padding:10px 0px;
+}
+
+.region-content .content > .node-recipe .field-image {
+float:left;
+padding:0px 25px 10px 0px;
+
+}
+
+.region-content .content > .node-recipe .field-ingredients {
+float:left;
+
+}
+
+.field-directions {
+padding:0px 0px 10px 0px;
 }
 
 /* FOOTER */
