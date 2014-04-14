@@ -34,9 +34,9 @@ list-style-type:none;
 margin:0px;
 padding:0px;
 font-family:bebasNeue;
-font-size:18px;
-border-top: 1px solid black;
-border-bottom: 1px solid black;
+font-size:25px;
+/*border-top: 1px solid black;
+border-bottom: 1px solid black;*/
 padding:7px 0px 0px 0px;
 height:26px;
 z-index:1000;
@@ -48,7 +48,7 @@ display:inline;
 }
 
 ul.nice-menu-down li {
-letter-spacing: .176em;
+letter-spacing: .05em;
 display:inline;
 }
 
@@ -58,20 +58,22 @@ padding:9px;
 background:rgba(255,255,255,.9);
 background-image: url("../images/background.png");
 border-top:none;
-border-right:1px solid black;
+/*border-right:1px solid black;
 border-left:1px solid black;
-border-bottom:1px solid black;
+border-bottom:1px solid black;*/
 float:none;
 z-index:120;
+box-shadow: 0px 4px 10px #666, 
+        -3px 4px 10px #666, 3px 4px 10px #666;
 }
 
 
 ul.nice-menu-down ul li {
 padding:3px 0px 3px 0px;
-font-family:Kingthings;
-font-size:16px;
+font-family:bebasNeue;
+font-size:18px;
 white-space:nowrap;
-letter-spacing:0;
+letter-spacing:.075;
 }
 
 ul.nice-menu-down ul li a {

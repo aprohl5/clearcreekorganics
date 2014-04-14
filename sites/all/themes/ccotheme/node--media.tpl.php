@@ -87,12 +87,6 @@
 
   <?php print $user_picture; ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-  
 
 <?php 
 if ($page){
@@ -112,43 +106,21 @@ echo "</h2>";
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['field_tags']);
-      hide($content['field_ingredients_tags']);
+     // hide($content['comments']);
+     // hide($content['links']);
+     // hide($content['field_tags']);
+        hide( $content['field_date']);
     // print render($content['field_tags']);
+      print render($content['field_date']);
+      echo "<h2>";
+      print $title;
+      echo "</h2>";
+      echo "<br>";
       print render($content);
-     
       
       
       
     ?>
   </div>
 
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
-  <?php
-   echo "<h4 class='tags'>Posted in:</h4>";
-      print render($content['field_tags']);
-      print render($content['field_ingredients_tags']);
-      ?>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

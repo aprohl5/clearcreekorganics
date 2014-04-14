@@ -87,20 +87,8 @@
 
   <?php print $user_picture; ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-  
 
-<?php 
-if ($page){
-echo "<h2>";
-print render($title);
-echo "</h2>";
-}
-?>
+
 
 
   <?php if ($display_submitted): ?>
@@ -108,6 +96,21 @@ echo "</h2>";
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
+
+  <?php 
+if ($page) {
+echo "<h2>";
+print render($title);
+echo "</h2>";
+}
+?>
+
+  <?php print render($title_prefix); ?>
+  <?php if (!$page): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+  
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
@@ -117,8 +120,7 @@ echo "</h2>";
       hide($content['field_tags']);
     // print render($content['field_tags']);
       print render($content);
-      echo "<h4>Posted in</h4>";
-      print render($content['field_tags']);
+     
       
       
       
@@ -128,5 +130,10 @@ echo "</h2>";
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
+
+  <?php
+   echo "<h4 class='tags'>Posted in:</h4>";
+      print render($content['field_tags']);
+      ?>
 
 </div>
