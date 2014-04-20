@@ -87,6 +87,15 @@
 
   <?php print $user_picture; ?>
 
+
+
+
+  <?php if ($display_submitted): ?>
+    <div class="submitted">
+      <?php print $submitted; ?>
+    </div>
+  <?php endif; ?>
+
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -101,13 +110,6 @@ print render($title);
 echo "</h2>";
 }
 ?>
-
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
@@ -125,6 +127,8 @@ echo "</h2>";
     ?>
   </div>
 
+<?php if (!$page): ?>
+
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
@@ -135,6 +139,21 @@ echo "</h2>";
       print render($content['field_ingredients_tags']);
       ?>
 
+<?php endif; ?>
+
+<?php if ($page): ?>
+
+    <?php
+   echo "<h4 class='tags'>Posted in:</h4>";
+      print render($content['field_tags']);
+      print render($content['field_ingredients_tags']);
+      ?>
+
+  <?php print render($content['links']); ?>
+
+  <?php print render($content['comments']); ?>
+
+<?php endif; ?>
 </div>
 
 

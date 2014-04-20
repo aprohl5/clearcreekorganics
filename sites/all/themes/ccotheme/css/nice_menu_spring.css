@@ -14,7 +14,7 @@
 ******************************/
 
 ul.nice-menu > li:hover > a, ul.nice-menu > li > ul > li:hover > a {
-color: #a53823;
+color: #CED528;
 }
 
 ul.nice-menu a {
@@ -22,7 +22,7 @@ color: #756c6a ;
 }
 
  ul.nice-menu > li.active-trail > ul > li.active-trail > a.active, ul.nice-menu > li.active-trail > a, #sidebar-first ul.nice-menu > li.active-trail > a  {
-color: #A53823;
+color: #CED528;
 }
 
 /******************************
@@ -88,8 +88,8 @@ position:relative;
 top:20%;
 }
 
-ul.nice-menu-down > li:last-child a {    /*   .leaf a */
-padding: 0px 5px 0 25px;
+ul.nice-menu-down li:last-child a {    /*   .leaf a */
+padding: 0px 25px;
 border-right: 0;
 position:relative;
 top:20%;

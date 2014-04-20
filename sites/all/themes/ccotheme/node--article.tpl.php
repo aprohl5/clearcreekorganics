@@ -126,6 +126,7 @@ echo "</h2>";
       
     ?>
   </div>
+<?php if (!$page): ?>
 
   <?php print render($content['links']); ?>
 
@@ -134,6 +135,23 @@ echo "</h2>";
   <?php
    echo "<h4 class='tags'>Posted in:</h4>";
       print render($content['field_tags']);
+      
       ?>
+
+<?php endif; ?>
+
+<?php if ($page): ?>
+
+    <?php
+   echo "<h4 class='tags'>Posted in:</h4>";
+      print render($content['field_tags']);
+     
+      ?>
+
+  <?php print render($content['links']); ?>
+
+  <?php print render($content['comments']); ?>
+
+<?php endif; ?>
 
 </div>

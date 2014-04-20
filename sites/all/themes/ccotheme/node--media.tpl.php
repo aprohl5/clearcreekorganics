@@ -115,8 +115,8 @@ echo "</h2>";
       echo "<h2>";
       print $title;
       echo "</h2>";
-      echo "<br>";
       print render($content);
+    
       
       
       

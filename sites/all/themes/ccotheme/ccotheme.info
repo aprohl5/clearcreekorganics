@@ -29,5 +29,6 @@ regions[content_home] = Homepage Content
 
 
 stylesheets[screen][] = css/styles.css
+;stylesheets[screen][] = css/spring.css
 
 scripts[] = js/scripts.js
