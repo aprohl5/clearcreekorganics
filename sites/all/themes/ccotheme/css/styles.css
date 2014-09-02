@@ -649,6 +649,14 @@ letter-spacing: .1em;
 
 /* MEDIA*/
 
+.view-media {
+float: left;
+position: relative;
+z-index: 12;
+/*font-family:kingthings;
+font-size:14px;*/
+}
+
 .view-media .views-row .field-date, .view-media .views-row h2 {
 /*display:inline-block;*/
 }
@@ -669,6 +677,10 @@ letter-spacing: .1em;
 .view-media .field-body {
 	margin:5px 0 25px 0;
 	padding:0;
+}
+
+.view-media .embedded-video {
+	padding:10px 0;
 }
 
 .view-media .views-row {
@@ -1015,7 +1027,7 @@ padding:0 5px;
 #block-block-5 {
 float:left;
 position:relative;
-top:30px;
+top:23px;
 color: rgba(255,255,255);
 }
 
@@ -1025,6 +1037,7 @@ text-transform:uppercase;
 
 #block-block-5 p {
 font-size:11px;
+padding:0px;
 }
 
 

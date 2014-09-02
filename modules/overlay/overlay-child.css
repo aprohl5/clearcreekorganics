@@ -17,7 +17,7 @@ html.js body {
 
 #overlay {
   display: table;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   min-height: 100px;
   min-width: 700px;
   position: relative;

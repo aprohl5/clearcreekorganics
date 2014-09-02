@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the cco_base feature.
+ */
+
+include_once 'cco_base.features.inc';

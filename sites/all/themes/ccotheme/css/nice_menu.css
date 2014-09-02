@@ -14,16 +14,17 @@
 ******************************/
 
 ul.nice-menu > li:hover > a, ul.nice-menu > li > ul > li:hover > a {
-color: #a53823;
+color: #589E44;
 }
 
 ul.nice-menu a {
-color: #756c6a ;
+color: #A36527;
 }
 
  ul.nice-menu > li.active-trail > ul > li.active-trail > a.active, ul.nice-menu > li.active-trail > a, #sidebar-first ul.nice-menu > li.active-trail > a  {
-color: #A53823;
+color: #589E44;
 }
+
 
 /******************************
  HORIZONTAL (down) menus
@@ -40,6 +41,8 @@ border-bottom: 1px solid black;*/
 padding:7px 0px 0px 0px;
 height:26px;
 z-index:1000;
+float:right;
+position:relative;
 }
 
 ul.nice-menu-down a {
@@ -47,12 +50,15 @@ display:inline;
 
 }
 
-ul.nice-menu-down li {
+ul.nice-menu-down > li {
 letter-spacing: .05em;
+float:left;
 display:inline;
+position:relative !important;
+/*float: none;*/
 }
 
-ul.nice-menu-down ul {
+ul.nice-menu-down > li > ul {
 margin:7px 0px 19px 16px;
 padding:9px;
 background:rgba(255,255,255,.9);
@@ -61,14 +67,15 @@ border-top:none;
 /*border-right:1px solid black;
 border-left:1px solid black;
 border-bottom:1px solid black;*/
-float:none;
+/*float:none;*/
+position:absolute;
 z-index:120;
 box-shadow: 0px 4px 10px #666, 
         -3px 4px 10px #666, 3px 4px 10px #666;
 }
 
 
-ul.nice-menu-down ul li {
+ul.nice-menu-down > li > ul > li {
 padding:3px 0px 3px 0px;
 font-family:bebasNeue;
 font-size:18px;
@@ -76,15 +83,15 @@ white-space:nowrap;
 letter-spacing:.075;
 }
 
-ul.nice-menu-down ul li a {
+ul.nice-menu-down > li > ul > li > a {
 padding:0px;
 border:none;
 }
 
-ul.nice-menu-down li a {    /*   .leaf a */
+ul.nice-menu-down > li > a {    /*   .leaf a */
 padding: 0px 25px;
 border-right: 2px solid #756c6a;
-position:relative;
+/*position:relative;*/
 top:20%;
 }
 
