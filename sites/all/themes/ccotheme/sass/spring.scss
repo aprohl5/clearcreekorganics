@@ -89,44 +89,40 @@ font-family: quicksanditalic;
 /* HEADER */
 
 header {
-height:222px;
-/*overflow:hidden;*/
-width:945px;
-position:relative;
-z-index:17;
-}
+	height:222px;
+	width:945px;
+	position:relative;
+	z-index:17;
 
-#logo {
-float:left;
-width:214px;
-margin-right:43px;
-}
+	#logo {
+		float:left;
+		width:214px;
+		margin-right:43px;
+	}
 
-/* EXTENDED TAGLINE */
+	#headerRight {
+		float:left;
+		width:688px;
+		z-index:16;
+	}
 
-#headerRight {
-float:left;
-width:688px;
-z-index:16;
-}
+	.region-header {
+		display:inline-block;
+		float:right;
+		position:relative;
+		top:115px;
+		left:-10px;
+	}
 
-.region-header {
-display:inline-block;
-float:right;
-position:relative;
-top:115px;
-left:-10px;
-}
-
-header h6 {
-display:inline;
-font-family:kingthings;
-color: $main_link;
-padding-right:18px;
+	h6 {
+		display:inline;
+		font-family:kingthings;
+		color: $main_link;
+		padding-right:18px;
+	}
 }
 
 /* Main Nav */
-
 
 .region-navigation {
 float:right;
@@ -794,7 +790,7 @@ height:107px;
 background-color:#756C6A;
 margin-top:23px;
 padding:0px 0px 0px 34px;
-color:#fff;
+color: $white;
 position:relative;
 z-index:13;
 }

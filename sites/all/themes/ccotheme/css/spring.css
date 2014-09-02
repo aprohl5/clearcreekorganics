@@ -154,33 +154,27 @@ em {
 /* HEADER */
 header {
   height: 222px;
-  /*overflow:hidden;*/
   width: 945px;
   position: relative;
   z-index: 17;
 }
-
-#logo {
+header #logo {
   float: left;
   width: 214px;
   margin-right: 43px;
 }
-
-/* EXTENDED TAGLINE */
-#headerRight {
+header #headerRight {
   float: left;
   width: 688px;
   z-index: 16;
 }
-
-.region-header {
+header .region-header {
   display: inline-block;
   float: right;
   position: relative;
   top: 115px;
   left: -10px;
 }
-
 header h6 {
   display: inline;
   font-family: kingthings;
@@ -820,7 +814,7 @@ ol.field-directions li {
   background-color: #756C6A;
   margin-top: 23px;
   padding: 0px 0px 0px 34px;
-  color: #fff;
+  color: white;
   position: relative;
   z-index: 13;
 }
