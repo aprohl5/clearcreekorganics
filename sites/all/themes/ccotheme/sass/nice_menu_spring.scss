@@ -1,0 +1,115 @@
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+ul.nice-menu > li:hover > a, ul.nice-menu > li > ul > li:hover > a {
+color: #589E44;
+}
+
+ul.nice-menu a {
+color: #A36527;
+}
+
+ ul.nice-menu > li.active-trail > ul > li.active-trail > a.active, ul.nice-menu > li.active-trail > a, #sidebar-first ul.nice-menu > li.active-trail > a  {
+color: #589E44;
+}
+
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+list-style-type:none;
+margin:0px;
+padding:0px;
+font-family:bebasNeue;
+font-size:25px;
+/*border-top: 1px solid black;
+border-bottom: 1px solid black;*/
+padding:7px 0px 0px 0px;
+height:26px;
+z-index:1000;
+/*float:right;
+position:relative;*/
+}
+
+ul.nice-menu-down a {
+display:inline;
+
+}
+
+ul.nice-menu-down > li {
+letter-spacing: .05em;
+display:inline;
+/*position:relative !important*/;
+/*float: none;*/
+}
+
+ul.nice-menu-down > li > ul {
+margin:7px 0px 19px 16px;
+padding:9px;
+background:rgba(255,255,255,.9);
+background-image: url("../images/background.png");
+border-top:none;
+/*border-right:1px solid black;
+border-left:1px solid black;
+border-bottom:1px solid black;*/
+float:none;
+position:absolute;
+z-index:120;
+box-shadow: 0px 4px 10px #666, 
+        -3px 4px 10px #666, 3px 4px 10px #666;
+}
+
+
+ul.nice-menu-down > li > ul > li {
+padding:3px 0px 3px 0px;
+font-family:bebasNeue;
+font-size:18px;
+white-space:nowrap;
+letter-spacing:.075;
+}
+
+ul.nice-menu-down > li > ul > li > a {
+padding:0px;
+border:none;
+}
+
+ul.nice-menu-down > li > a {    /*   .leaf a */
+padding: 0px 25px;
+border-right: 2px solid #756c6a;
+/*position:relative;*/
+top:20%;
+}
+
+ul.nice-menu-down > li:last-child a {    /*   .leaf a */
+padding: 0px 5px 0 25px;
+border-right: 0;
+position:relative;
+top:20%;
+}
+
+/******************************
+ VERTICAL (right) menus
+******************************/
+
+
+ul.nice-menu-right li {
+padding: 8px 21px;
+}
+
+ul.nice-menu-right li:first-child {
+padding: 42px 21px 8px 21px;
+}

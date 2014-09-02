@@ -8,102 +8,96 @@
   See README.txt and the handbook page (http://drupal.org/node/185543)
   for more information on using the CSS.
 */
-
 /******************************
  Global CSS for ALL menu types
 ******************************/
-
 ul.nice-menu > li:hover > a, ul.nice-menu > li > ul > li:hover > a {
-color: #a53823;
+  color: #a53823;
 }
 
 ul.nice-menu a {
-color: #756c6a ;
+  color: #756c6a;
 }
 
- ul.nice-menu > li.active-trail > ul > li.active-trail > a.active, ul.nice-menu > li.active-trail > a, #sidebar-first ul.nice-menu > li.active-trail > a  {
-color: #A53823;
+ul.nice-menu > li.active-trail > ul > li.active-trail > a.active, ul.nice-menu > li.active-trail > a, #sidebar-first ul.nice-menu > li.active-trail > a {
+  color: #A53823;
 }
 
 /******************************
  HORIZONTAL (down) menus
 ******************************/
-
 ul.nice-menu-down {
-list-style-type:none;
-margin:0px;
-padding:0px;
-font-family:bebasNeue;
-font-size:25px;
-/*border-top: 1px solid black;
-border-bottom: 1px solid black;*/
-padding:7px 0px 0px 0px;
-height:26px;
-z-index:1000;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: bebasNeue;
+  font-size: 25px;
+  /*border-top: 1px solid black;
+  border-bottom: 1px solid black;*/
+  padding: 7px 0px 0px 0px;
+  height: 26px;
+  z-index: 1000;
 }
 
 ul.nice-menu-down a {
-display:inline;
-
+  display: inline;
 }
 
 ul.nice-menu-down li {
-letter-spacing: .05em;
-display:inline;
+  letter-spacing: .05em;
+  display: inline;
 }
 
 ul.nice-menu-down ul {
-margin:7px 0px 19px 16px;
-padding:9px;
-background:rgba(255,255,255,.9);
-background-image: url("../images/background.png");
-border-top:none;
-/*border-right:1px solid black;
-border-left:1px solid black;
-border-bottom:1px solid black;*/
-float:none;
-z-index:120;
-box-shadow: 0px 4px 10px #666, 
-        -3px 4px 10px #666, 3px 4px 10px #666;
+  margin: 7px 0px 19px 16px;
+  padding: 9px;
+  background: rgba(255, 255, 255, 0.9);
+  background-image: url("../images/background.png");
+  border-top: none;
+  /*border-right:1px solid black;
+  border-left:1px solid black;
+  border-bottom:1px solid black;*/
+  float: none;
+  z-index: 120;
+  box-shadow: 0px 4px 10px #666,  -3px 4px 10px #666, 3px 4px 10px #666;
 }
 
-
 ul.nice-menu-down ul li {
-padding:3px 0px 3px 0px;
-font-family:bebasNeue;
-font-size:18px;
-white-space:nowrap;
-letter-spacing:.075;
+  padding: 3px 0px 3px 0px;
+  font-family: bebasNeue;
+  font-size: 18px;
+  white-space: nowrap;
+  letter-spacing: .075;
 }
 
 ul.nice-menu-down ul li a {
-padding:0px;
-border:none;
+  padding: 0px;
+  border: none;
 }
 
-ul.nice-menu-down li a {    /*   .leaf a */
-padding: 0px 25px;
-border-right: 2px solid #756c6a;
-position:relative;
-top:20%;
+ul.nice-menu-down li a {
+  /*   .leaf a */
+  padding: 0px 25px;
+  border-right: 2px solid #756c6a;
+  position: relative;
+  top: 20%;
 }
 
-ul.nice-menu-down > li:last-child a {    /*   .leaf a */
-padding: 0px 5px 0 25px;
-border-right: 0;
-position:relative;
-top:20%;
+ul.nice-menu-down > li:last-child a {
+  /*   .leaf a */
+  padding: 0px 5px 0 25px;
+  border-right: 0;
+  position: relative;
+  top: 20%;
 }
 
 /******************************
  VERTICAL (right) menus
 ******************************/
-
-
 ul.nice-menu-right li {
-padding: 8px 21px;
+  padding: 8px 21px;
 }
 
 ul.nice-menu-right li:first-child {
-padding: 42px 21px 8px 21px;
+  padding: 42px 21px 8px 21px;
 }
