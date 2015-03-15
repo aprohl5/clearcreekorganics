@@ -53,7 +53,7 @@ DirectoryIndex index.php index.html index.htm
 </IfModule>
 
 # Various rewrite rules.
-<IfModule mod_rewrite.c>
+<IfModule XXXmod_rewrite.c>
   RewriteEngine on
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
