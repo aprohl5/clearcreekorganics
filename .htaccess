@@ -11,7 +11,9 @@
 Options -Indexes
 
 # Follow symbolic links in this directory.
-Options +FollowSymLinks
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
 
 # Make Drupal handle any 404 errors.
 ErrorDocument 404 /index.php
@@ -53,7 +55,8 @@ DirectoryIndex index.php index.html index.htm
 </IfModule>
 
 # Various rewrite rules.
-<IfModule XXXmod_rewrite.c>
+<IfModule mod_rewrite.c>
+
   RewriteEngine on
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
@@ -107,14 +110,14 @@ DirectoryIndex index.php index.html index.htm
   #
   # If your site is running in a VirtualDocumentRoot at http://example.com/,
   # uncomment the following line:
-  # RewriteBase /
+   RewriteBase /clearcreekorganics
 
   # Pass all requests not referring directly to files in the filesystem to
   # index.php. Clean URLs are handled in drupal_environment_initialize().
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} !=/favicon.ico
-  RewriteRule ^ index.php [L]
+  RewriteRule ^ /clearcreekorganics/index.php [L]
 
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
