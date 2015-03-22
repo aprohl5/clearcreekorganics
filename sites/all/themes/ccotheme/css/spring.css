@@ -409,7 +409,7 @@ h3 {
 }
 
 /* FAQ PAGES */
-.view-csa-faq, .view-wholesale-faq {
+.view-csa-faq, .view-wholesale-faq, .view-clone-of-csa-faq {
   width: 685px;
   min-height: 513px;
   float: left;
