@@ -64,7 +64,6 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'kingthings';
   src: url("../fonts/kingthings/Kingthings_Trypewriter_2-webfont.eot");
@@ -72,7 +71,6 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'quicksanditalic';
   src: url("../fonts/quicksand/quicksand-italic-webfont.eot");
@@ -80,7 +78,6 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'quicksandregular';
   src: url("../fonts/quicksand/quicksand-regular-webfont.eot");
@@ -88,7 +85,6 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-
 /*
 spring palette
 
@@ -426,7 +422,7 @@ h3 {
 }
 
 /* FAQ PAGES */
-.view-csa-faq, .view-wholesale-faq {
+.view-csa-faq, .view-wholesale-faq, .view-clone-of-csa-faq {
   width: 685px;
   min-height: 513px;
   float: left;
