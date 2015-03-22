@@ -215,18 +215,9 @@ $databases = array (
   array (
     'default' => 
     array (
-<<<<<<< Updated upstream
       'database' => 'clearcs8_cco2',
       'username' => 'clearcs8_ccouser',
       'password' => 'clearcs8_ccouser1!',
-=======
-      //'database' => 'clearcs8_cco2',
-      //'username' => 'clearcs8_ccouser',
-      //'password' => 'clearcs8_ccouser1!',
-      'database' => 'ccodba',
-      'username' => 'root',
-      'password' => '',
->>>>>>> Stashed changes
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -286,13 +277,8 @@ $drupal_hash_salt = '08bTaP8MaeZ0FeLaQDBMTMbc_nWrZjK5S3T1SYTUzh4';
  *
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
-<<<<<<< Updated upstream
  */
  $base_url = 'http://clearcreekorganics.org';  // NO trailing slash!*/
-=======
- *
- *$base_url = 'http://localhost';  // NO trailing slash!*/
->>>>>>> Stashed changes
 
 /**
  * PHP settings:
